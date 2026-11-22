@@ -1,0 +1,1201 @@
+{
+ "request": "calibrate-01.json",
+ "ran_at": "2026-11-22 18:05 UTC",
+ "settings": {
+  "max_views": 1500,
+  "min_seconds": 90,
+  "max_minutes": 15,
+  "released_before": "2023-01-01",
+  "released_after": "2014-06-01",
+  "results_per_search": 50
+ },
+ "searches": [],
+ "tracks": [],
+ "artists": [
+  {
+   "channel_id": "UC2DaIK5N0YVaqtdaBa8oW0w",
+   "artist": "Ddfromthac",
+   "total_plays": 881,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UCJNQiL8cNoYc-UZ26XarISg",
+   "artist": "Hot Dad Calendar",
+   "total_plays": 7651,
+   "tracks": 0,
+   "subscribers": 69
+  },
+  {
+   "channel_id": "UCD8Keq_BIWfVStyrhP-Iu1g",
+   "artist": "Lavanda",
+   "total_plays": 472,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UC1iifWnhMmmFx4Sxb9D7ccA",
+   "artist": "The McKenzie Burns Project",
+   "total_plays": 2726,
+   "tracks": 0,
+   "subscribers": 19
+  },
+  {
+   "channel_id": "UC7RJTtpE3qwbw6-Idq9PTIg",
+   "artist": "Shockwave-Sound",
+   "total_plays": 4925610,
+   "tracks": 0,
+   "subscribers": 4630
+  },
+  {
+   "channel_id": "UC0XPrTD4JDy1qXHwfVM22Lg",
+   "artist": "Coolshark",
+   "total_plays": 2776,
+   "tracks": 0,
+   "subscribers": 13
+  },
+  {
+   "channel_id": "UC42RANNIon1libCBot4AjfA",
+   "artist": "Richard Filz",
+   "total_plays": 170812,
+   "tracks": 0,
+   "subscribers": 836
+  },
+  {
+   "channel_id": "UCBRltkeCmx7VNGYmndtrr3g",
+   "artist": "N3ffBeats",
+   "total_plays": 707,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCAHRYNFhN_1G1pDozDwtOcQ",
+   "artist": "Jmischer",
+   "total_plays": 1302,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UC0fNd0cHVO7747ZnQp9G6Ew",
+   "artist": "Chris Ellys",
+   "total_plays": 7425,
+   "tracks": 0,
+   "subscribers": 46
+  },
+  {
+   "channel_id": "UCCeb_zAlJ1pwAyKDITx90-Q",
+   "artist": "Gordon Hendricks",
+   "total_plays": 449258,
+   "tracks": 0,
+   "subscribers": 914
+  },
+  {
+   "channel_id": "UC5C7_21IB9BB_-VJdLT4fkA",
+   "artist": "Darth Joom",
+   "total_plays": 13598,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UCOUsYmnjB46myPZsPieO87g",
+   "artist": "Wilobowski",
+   "total_plays": 203,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UCQ4LJwLFkv3fLaGIgzEuUYw",
+   "artist": "SEIDRKIN",
+   "total_plays": 5534,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCM9-69szuQPOkpgS_37P9zw",
+   "artist": "Kimbo Children's Music",
+   "total_plays": 12579512,
+   "tracks": 0,
+   "subscribers": 13500
+  },
+  {
+   "channel_id": "UCO95rWwbk-nGqumJgmM344A",
+   "artist": "Sargeant X Comrade",
+   "total_plays": 6937,
+   "tracks": 0,
+   "subscribers": 119
+  },
+  {
+   "channel_id": "UCKaadq2L1TseHJtBZNibmhw",
+   "artist": "CDB",
+   "total_plays": 2879,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UC9Vzr9kKmpjvbOmNjf2Uv5w",
+   "artist": "AE",
+   "total_plays": 18088,
+   "tracks": 0,
+   "subscribers": 42
+  },
+  {
+   "channel_id": "UCOwrVARcn3OFXyOlkUwXHtw",
+   "artist": "Cris Da Praia",
+   "total_plays": 586,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UC99k2lVGI1TcARPvgx9yDXA",
+   "artist": "Alvin Hayes Jr",
+   "total_plays": 6733,
+   "tracks": 0,
+   "subscribers": 43
+  },
+  {
+   "channel_id": "UCQ_vSAurmVEgd22BU8rhZAA",
+   "artist": "The Archie Herman Band",
+   "total_plays": 22067,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UC80SCYJR4zVek0L9r-Bh65A",
+   "artist": "Tom Rasely",
+   "total_plays": 18773,
+   "tracks": 0,
+   "subscribers": 46
+  },
+  {
+   "channel_id": "UC6n__wVkjuHC91-qNvNlT2w",
+   "artist": "Paolo Lombardi",
+   "total_plays": 1524,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCHvYdWpm00p5kvykP7WIBtw",
+   "artist": "Wuella",
+   "total_plays": 7806,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCCFXzCRUUlU1U-WjhEfyIxg",
+   "artist": "Klaus-Andre Eickhoff",
+   "total_plays": 6712,
+   "tracks": 0,
+   "subscribers": 10
+  },
+  {
+   "channel_id": "UCJHf-P5rEe9_pFpLGPIkENg",
+   "artist": "West Coast Man",
+   "total_plays": 3416,
+   "tracks": 0,
+   "subscribers": 23
+  },
+  {
+   "channel_id": "UC8DmjR7OVtw3KjCtEWWNIKw",
+   "artist": "Marmalade",
+   "total_plays": 28185,
+   "tracks": 0,
+   "subscribers": 74
+  },
+  {
+   "channel_id": "UCOG5CMzpM6XP05lLtNm-kcg",
+   "artist": "Gerr Walsh",
+   "total_plays": 777,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCKStryIXZ-_XQlwmWTVep3w",
+   "artist": "Pablo the Mad Tiger Warrior",
+   "total_plays": 2567,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCQv-ozZ2KI7eGOMufwuHlAQ",
+   "artist": "Unchanging Vibes",
+   "total_plays": 9556,
+   "tracks": 0,
+   "subscribers": 95
+  },
+  {
+   "channel_id": "UC1mq2Z57NOo90r-kKDycY-g",
+   "artist": "Sonderr",
+   "total_plays": 323,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UC1tbYSrzOlZe1KeQCGe29Cw",
+   "artist": "Release",
+   "total_plays": 1673,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UC0Wc7kcNAxrV4hIJBSkYZHQ",
+   "artist": "Black Majjc",
+   "total_plays": 1628,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UCKw8pNJ28FRqkm8KJbkz6YA",
+   "artist": "Lappalie",
+   "total_plays": 17475,
+   "tracks": 0,
+   "subscribers": 57
+  },
+  {
+   "channel_id": "UC96ucv2czjqxx-ZmvdaP68w",
+   "artist": "Willi RD",
+   "total_plays": 21879,
+   "tracks": 0,
+   "subscribers": 73
+  },
+  {
+   "channel_id": "UC2y4TN61PtnuIc3PCzsbgNA",
+   "artist": "Robot Millennium",
+   "total_plays": 1232,
+   "tracks": 0,
+   "subscribers": 23
+  },
+  {
+   "channel_id": "UCDzGbJIahqZozjT2sbahAGA",
+   "artist": "Jason Demmon",
+   "total_plays": 6493,
+   "tracks": 0,
+   "subscribers": 14
+  },
+  {
+   "channel_id": "UC2kctMZ_rx92KXLVD2wfw-A",
+   "artist": "Scott Salmon",
+   "total_plays": 1047,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCBSmVI8jZwrkaHpWQyGEwJg",
+   "artist": "Brittany Rain",
+   "total_plays": 919,
+   "tracks": 0,
+   "subscribers": 26
+  },
+  {
+   "channel_id": "UC3gMgDjLqPEQKWWa3sdm29w",
+   "artist": "Mix Kris-E",
+   "total_plays": 58906,
+   "tracks": 0,
+   "subscribers": 55
+  },
+  {
+   "channel_id": "UC73tvHEf290gQvPH_IzWnNQ",
+   "artist": "One More Time",
+   "total_plays": 5816,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UC7qaRfM5AR3TqZNRNpmV-nA",
+   "artist": "Our Violet Room",
+   "total_plays": 99593,
+   "tracks": 0,
+   "subscribers": 208
+  },
+  {
+   "channel_id": "UCK5m5w9ammmw8XBMjMp4P8A",
+   "artist": "dirk hinz",
+   "total_plays": 38,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UC4LN6JAl4N6qj_-LrJjN0MQ",
+   "artist": "AJ Churchill",
+   "total_plays": 3433,
+   "tracks": 0,
+   "subscribers": 16
+  },
+  {
+   "channel_id": "UCJTi2ma2pMSgrhfcCqRrYzQ",
+   "artist": "Reality",
+   "total_plays": 2623,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCOBPNVioATLcujB4ScTuoAA",
+   "artist": "Savvas",
+   "total_plays": 7410,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCPfjCLcHI8TebNzLLVCubRw",
+   "artist": "Stan Davis",
+   "total_plays": 2215,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UC3K6vVj1ed05r1RFYfSWx5w",
+   "artist": "Phil Brown",
+   "total_plays": 7779,
+   "tracks": 0,
+   "subscribers": 16
+  },
+  {
+   "channel_id": "UCGn3TteNri_wxP8n_9PcM3A",
+   "artist": "Tom Baptist",
+   "total_plays": 695,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UC7IWujbh8NaimLZebzqaXjQ",
+   "artist": "Marcelo Lima",
+   "total_plays": 6892,
+   "tracks": 0,
+   "subscribers": 12
+  },
+  {
+   "channel_id": "UCfc7TPGq_hkhC2xsiA8N3BA",
+   "artist": "Stefano Mastronardi",
+   "total_plays": 440824,
+   "tracks": 0,
+   "subscribers": 1040
+  },
+  {
+   "channel_id": "UCeHjUCUlNhiC9OzJEFvxk5A",
+   "artist": "4EverfreeBrony",
+   "total_plays": 2639873,
+   "tracks": 0,
+   "subscribers": 2370
+  },
+  {
+   "channel_id": "UCW8c_6UyIqkeD768M3_dF8A",
+   "artist": "Release",
+   "total_plays": 265,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCYXw551fs_SLDj6lq49CL9Q",
+   "artist": "Big Marcus",
+   "total_plays": 4603,
+   "tracks": 0,
+   "subscribers": 10
+  },
+  {
+   "channel_id": "UC_SZqKbdj3WnCbYJWWiIEIQ",
+   "artist": "David Adrián",
+   "total_plays": 88347,
+   "tracks": 0,
+   "subscribers": 25
+  },
+  {
+   "channel_id": "UCf-LqkzPmZWF5ppywYnsW7w",
+   "artist": "Cameron Sanderson",
+   "total_plays": 1916472,
+   "tracks": 0,
+   "subscribers": 771
+  },
+  {
+   "channel_id": "UCZt9EGx12GkTIDMnLu94gTw",
+   "artist": "Carly Parker",
+   "total_plays": 2229,
+   "tracks": 0,
+   "subscribers": 12
+  },
+  {
+   "channel_id": "UCVVsusBFAV5og4AxwdHmqZQ",
+   "artist": "Greg Appel",
+   "total_plays": 674,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCUcgtbdzMjLL6cMMVxOmAkQ",
+   "artist": "Jon",
+   "total_plays": 572,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCRBlOX2FW74HnmBsVQOQ4TQ",
+   "artist": "Canager & Original Burning",
+   "total_plays": 1000,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCax6eOTmnLTYs_eSnQeXuRA",
+   "artist": "Juliah",
+   "total_plays": 51048,
+   "tracks": 0,
+   "subscribers": 27
+  },
+  {
+   "channel_id": "UCe7tbqK5l7x9YikV_LMLUWg",
+   "artist": "The Kirkland Project",
+   "total_plays": 1442,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UCVL94JTHo7ZE9xcx5Vj0TVg",
+   "artist": "LincWayne",
+   "total_plays": 3718,
+   "tracks": 0,
+   "subscribers": 48
+  },
+  {
+   "channel_id": "UCVy9e0Dpb1wKVU8IpWnJ80w",
+   "artist": "Alexandros Iacovides",
+   "total_plays": 141313,
+   "tracks": 0,
+   "subscribers": 215
+  },
+  {
+   "channel_id": "UC_E4v80yFfAvspT5TLWK67w",
+   "artist": "Omaru Devoid",
+   "total_plays": 3752,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UCXeYFyZmxCJuuscLUjiI3tA",
+   "artist": "Funk Avy",
+   "total_plays": 7101,
+   "tracks": 0,
+   "subscribers": 27
+  },
+  {
+   "channel_id": "UCWGHptEh_RY3BuM2mPcbsRw",
+   "artist": "Hot Club Pacific",
+   "total_plays": 1445,
+   "tracks": 0,
+   "subscribers": 8
+  },
+  {
+   "channel_id": "UCVNgOSZ-SRlxhI398MFuMgQ",
+   "artist": "Marcelo Kimura",
+   "total_plays": 16622,
+   "tracks": 0,
+   "subscribers": 9
+  },
+  {
+   "channel_id": "UCeh8mSnKF_T4GiAV8AlW5Jg",
+   "artist": "Jens Smedman",
+   "total_plays": 29463,
+   "tracks": 0,
+   "subscribers": 60
+  },
+  {
+   "channel_id": "UCc5dITij8YdLsauRRO2w84w",
+   "artist": "Carnaband Guggenmusik",
+   "total_plays": 68598,
+   "tracks": 0,
+   "subscribers": 52
+  },
+  {
+   "channel_id": "UCVq_ZvABgVpDs98hRmi9twg",
+   "artist": "GhostHouseProductions818",
+   "total_plays": 11627,
+   "tracks": 0,
+   "subscribers": 20
+  },
+  {
+   "channel_id": "UCaDOwNUFzfvBD7QjBlN-vQg",
+   "artist": "Rev. Ezra & the Lone Pines",
+   "total_plays": 2140,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UCas74gCyiRNaYsrvRwjwPVw",
+   "artist": "Matthew Human and the Human Revolution",
+   "total_plays": 10231,
+   "tracks": 0,
+   "subscribers": 88
+  },
+  {
+   "channel_id": "UCahO_mQbEY7zqXOaHF3e91Q",
+   "artist": "Momo Ward",
+   "total_plays": 78669,
+   "tracks": 0,
+   "subscribers": 226
+  },
+  {
+   "channel_id": "UCaJEQKJ525l8d6FrRakUNlg",
+   "artist": "Kendra Sutton",
+   "total_plays": 2191,
+   "tracks": 0,
+   "subscribers": 10
+  },
+  {
+   "channel_id": "UCSDkyvdnvHkkxAtQPo0OxEw",
+   "artist": "Eddie Garrido",
+   "total_plays": 13884,
+   "tracks": 0,
+   "subscribers": 63
+  },
+  {
+   "channel_id": "UCc-PlC9ZXp2kJ4Cy7Uxo1wQ",
+   "artist": "Gabriel Alexander",
+   "total_plays": 621,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCSOsbiBYjWGwpHbNslOFBSg",
+   "artist": "Sarah Wise Music",
+   "total_plays": 589,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCSdwWukrlcmkB40kSweF2Cg",
+   "artist": "Erik Hjelt",
+   "total_plays": 2863,
+   "tracks": 0,
+   "subscribers": 17
+  },
+  {
+   "channel_id": "UCSD0hGBkaXgJJvRd1QcSarQ",
+   "artist": "Release",
+   "total_plays": 1016,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UC_rIW9NTICDlTvhVgDpTlvA",
+   "artist": "Clara Telles",
+   "total_plays": 4123,
+   "tracks": 0,
+   "subscribers": 78
+  },
+  {
+   "channel_id": "UCeGoJ7VTxlTspzn3970ggrQ",
+   "artist": "Petermanoz",
+   "total_plays": 15452,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCUeilQxA153bvs-hLdR0zaA",
+   "artist": "Fvntvnv",
+   "total_plays": 3492,
+   "tracks": 0,
+   "subscribers": 23
+  },
+  {
+   "channel_id": "UCbO8g-sErwhstkCfGPU98PA",
+   "artist": "The Apalachicola Sound",
+   "total_plays": 18611,
+   "tracks": 0,
+   "subscribers": 34
+  },
+  {
+   "channel_id": "UCbf-XH8IR2pm0pN4MeEzjaQ",
+   "artist": "Ward Warren",
+   "total_plays": 563,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UCRe3y3E0MWpas0nSoTuxpoQ",
+   "artist": "Terri Bu Tang",
+   "total_plays": 90,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCaoX4WCRg_h8OMMbHrB_vhA",
+   "artist": "Big Chef Dog",
+   "total_plays": 1750,
+   "tracks": 0,
+   "subscribers": 14
+  },
+  {
+   "channel_id": "UCd-tni4Kkq3pMFQY339hVdw",
+   "artist": "Ames1",
+   "total_plays": 364,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCYkcNMbhTxVx0qonxaLV8Qg",
+   "artist": "Ceehunniitz",
+   "total_plays": 20447,
+   "tracks": 0,
+   "subscribers": 12
+  },
+  {
+   "channel_id": "UCWHOZEL_K-g4vF_HrK3MHSA",
+   "artist": "Samuel Scott McCumber",
+   "total_plays": 59909,
+   "tracks": 0,
+   "subscribers": 145
+  },
+  {
+   "channel_id": "UC__btahDMAVTTeDMltEiqfQ",
+   "artist": "Alma Thomas",
+   "total_plays": 19240,
+   "tracks": 0,
+   "subscribers": 218
+  },
+  {
+   "channel_id": "UCfQzDuGNyoENyv23oZGW4qw",
+   "artist": "Nick Batterham",
+   "total_plays": 31952,
+   "tracks": 0,
+   "subscribers": 52
+  },
+  {
+   "channel_id": "UCRP--qlyUytxdBO41DOPXBg",
+   "artist": "Hyperubik",
+   "total_plays": 53,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCY_YrfmYVMNd90nxwjPZpFQ",
+   "artist": "Gabriel Ortiz",
+   "total_plays": 227,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCfKwCYWyGOB2w4cRjzSt_Zg",
+   "artist": "David Imhof",
+   "total_plays": 27161,
+   "tracks": 0,
+   "subscribers": 8
+  },
+  {
+   "channel_id": "UCTEp2n2fJXmtKoMlMlFVApg",
+   "artist": "Fri",
+   "total_plays": 693,
+   "tracks": 0,
+   "subscribers": 10
+  },
+  {
+   "channel_id": "UCZsTXdVgAC7Uyezx6WzDjKg",
+   "artist": "prodflux",
+   "total_plays": 9226,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCcTJ7AUAplOngNPOOm-sH-A",
+   "artist": "Warren B",
+   "total_plays": 21299,
+   "tracks": 0,
+   "subscribers": 248
+  },
+  {
+   "channel_id": "UCb1gzPYnN1qphNKi9kYDvIg",
+   "artist": "Belmont Blues Kings",
+   "total_plays": 436,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCTSNykOvhc5RRO02ZeySyvQ",
+   "artist": "PillJar",
+   "total_plays": 945,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UChvwDef3JJvtdFOjDmmL8PQ",
+   "artist": "Mars Murkin",
+   "total_plays": 595,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCocy5WbQ5zZ1YViAE41GATw",
+   "artist": "Konsciencebeatz",
+   "total_plays": 42585,
+   "tracks": 0,
+   "subscribers": 158
+  },
+  {
+   "channel_id": "UCuRysgM1Fw66LoaX_mLl51g",
+   "artist": "Frank Tuma",
+   "total_plays": 39961,
+   "tracks": 0,
+   "subscribers": 68
+  },
+  {
+   "channel_id": "UCpm7xERAIJENanB8HlkWyvA",
+   "artist": "Greg Yasinitsky",
+   "total_plays": 8781,
+   "tracks": 0,
+   "subscribers": 30
+  },
+  {
+   "channel_id": "UCpGnbkrBSpmIqMyb4i2ommw",
+   "artist": "Mitra Dasa",
+   "total_plays": 14751,
+   "tracks": 0,
+   "subscribers": 90
+  },
+  {
+   "channel_id": "UCmM4FsQOl6DhwOl2rReftfQ",
+   "artist": "Flavia Nuñez",
+   "total_plays": 1130,
+   "tracks": 0,
+   "subscribers": 16
+  },
+  {
+   "channel_id": "UCn8AwMknIM4SOzbguoNHQKA",
+   "artist": "James Anthony Band",
+   "total_plays": 2803,
+   "tracks": 0,
+   "subscribers": 21
+  },
+  {
+   "channel_id": "UCk-m6nRkS3nVyO8kA2bWGfg",
+   "artist": "Cynthia Tauro",
+   "total_plays": 17501,
+   "tracks": 0,
+   "subscribers": 44
+  },
+  {
+   "channel_id": "UClPKo6Pj23VGU7T85RWYkWQ",
+   "artist": "Evan Alexander Moore",
+   "total_plays": 579,
+   "tracks": 0,
+   "subscribers": 7
+  },
+  {
+   "channel_id": "UCjiSVm0Sb2CUKLCWOZUq0oA",
+   "artist": "Various Artists",
+   "total_plays": 10530465,
+   "tracks": 0,
+   "subscribers": 6260
+  },
+  {
+   "channel_id": "UChCJAXq4RioR8N85qzCQDeg",
+   "artist": "Wallyscott",
+   "total_plays": 12850,
+   "tracks": 0,
+   "subscribers": 36
+  },
+  {
+   "channel_id": "UCrUhCB4PulhGbjOgyyeShHQ",
+   "artist": "Joe Cea",
+   "total_plays": 1061,
+   "tracks": 0,
+   "subscribers": 9
+  },
+  {
+   "channel_id": "UCrM6Ya3k7TMU5vQv1j5Yqjg",
+   "artist": "Alan Al",
+   "total_plays": 302634,
+   "tracks": 0,
+   "subscribers": 41
+  },
+  {
+   "channel_id": "UCuNoj1pwPwe3U7FAuq-msgw",
+   "artist": "Lydia Gray",
+   "total_plays": 1053380,
+   "tracks": 0,
+   "subscribers": 547
+  },
+  {
+   "channel_id": "UCsaKBZq9HUmPRfHdRMrglGg",
+   "artist": "Per Olav Kobberstad",
+   "total_plays": 611,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UCjwj6BYnRUkS6ksLngpi_IQ",
+   "artist": "Mathew James",
+   "total_plays": 775,
+   "tracks": 0,
+   "subscribers": 8
+  },
+  {
+   "channel_id": "UCkD_8kuEvQluEbxvLEwn_BA",
+   "artist": "Ashby",
+   "total_plays": 3039,
+   "tracks": 0,
+   "subscribers": 8
+  },
+  {
+   "channel_id": "UCpJscRe2EToSjlmgUeJTzKw",
+   "artist": "Galdino Gal",
+   "total_plays": 3792,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UCqzyxcM07zKHfJY_QzFjfYA",
+   "artist": "Circus of Wolves",
+   "total_plays": 1163,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UCkXWD8_LCZyIrx6eLzjmxhg",
+   "artist": "Izzie Walsh",
+   "total_plays": 15079,
+   "tracks": 0,
+   "subscribers": 68
+  },
+  {
+   "channel_id": "UCkKejsRiy4227XEEpa8lvdg",
+   "artist": "Drum! Drum! Drum!",
+   "total_plays": 1819688,
+   "tracks": 0,
+   "subscribers": 1300
+  },
+  {
+   "channel_id": "UCn9nKz-Qx1n4ROK6DuxlsPw",
+   "artist": "Youjam",
+   "total_plays": 295535,
+   "tracks": 0,
+   "subscribers": 886
+  },
+  {
+   "channel_id": "UCuROwiw6W0qviwpt8EGcYIQ",
+   "artist": "Kito Rodriguez",
+   "total_plays": 506,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCrDgFNnZJOyAYi-QEvt2dOA",
+   "artist": "Waiting for the Stars to Collide",
+   "total_plays": 2262,
+   "tracks": 0,
+   "subscribers": 13
+  },
+  {
+   "channel_id": "UCntnhFuBrc1JVKP1LNJp4Jg",
+   "artist": "Genesis7",
+   "total_plays": 24125,
+   "tracks": 0,
+   "subscribers": 164
+  },
+  {
+   "channel_id": "UCggDadrgKKnYiA6n5Txo7uQ",
+   "artist": "Soundtrakwoo",
+   "total_plays": 282,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCmp_ahm4HrnYizi_Ey8t6kA",
+   "artist": "Bill McBirnie",
+   "total_plays": 45517,
+   "tracks": 0,
+   "subscribers": 186
+  },
+  {
+   "channel_id": "UCiwWOLZNX4hNjLxQtRKAj7A",
+   "artist": "DUSTN WHITE",
+   "total_plays": 5412,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCm9oVJNV_oZvuD_FmU_VAMQ",
+   "artist": "NICK FOSTER",
+   "total_plays": 2372,
+   "tracks": 0,
+   "subscribers": 12
+  },
+  {
+   "channel_id": "UCuX42aU_zF_l-3xd49tkE3Q",
+   "artist": "DJ 13",
+   "total_plays": 15959,
+   "tracks": 0,
+   "subscribers": 353
+  },
+  {
+   "channel_id": "UCrif4oL6_Uwgrd5YLzcEITg",
+   "artist": "Jon Stephen",
+   "total_plays": 1526,
+   "tracks": 0,
+   "subscribers": 7
+  },
+  {
+   "channel_id": "UCnOdTJ5hoxkJ4npYsbo7VaQ",
+   "artist": "Release",
+   "total_plays": 225,
+   "tracks": 0,
+   "subscribers": 0
+  },
+  {
+   "channel_id": "UCnfQYlmc3Bo90Xc6z1B0RIQ",
+   "artist": "Don White",
+   "total_plays": 29154,
+   "tracks": 0,
+   "subscribers": 62
+  },
+  {
+   "channel_id": "UCsi-a0ioNkF4Eckn3D9BBpA",
+   "artist": "Paul Garratt",
+   "total_plays": 1354,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UClZe7XALoaQhNWdugXOW95w",
+   "artist": "Anthony Clint Jr",
+   "total_plays": 4369,
+   "tracks": 0,
+   "subscribers": 36
+  },
+  {
+   "channel_id": "UCtw7yZyO6Bj1Oa6YRwC4sWA",
+   "artist": "Marcos Ariel & Jean Pierre Zanella",
+   "total_plays": 529610,
+   "tracks": 0,
+   "subscribers": 1080
+  },
+  {
+   "channel_id": "UCl4Ud18EEkv614cXzvQyTUQ",
+   "artist": "Hope Machine",
+   "total_plays": 265,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UClPOJBAMqYt8H0kWORwciXg",
+   "artist": "Fromage Chaud",
+   "total_plays": 3818,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UCjYR6BiRAXD4eAFs1jai5hA",
+   "artist": "Skoobe Brown",
+   "total_plays": 2644,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCkuteOKhtCBY07umK7W1I_A",
+   "artist": "Robert Chilingirian",
+   "total_plays": 408887,
+   "tracks": 0,
+   "subscribers": 651
+  },
+  {
+   "channel_id": "UCmMmQxAUg3r-PESy7p34zHA",
+   "artist": "Marcella Wisbrun",
+   "total_plays": 2008,
+   "tracks": 0,
+   "subscribers": 17
+  },
+  {
+   "channel_id": "UCidziRPXkjP_cY8vaD_-_vA",
+   "artist": "Morocco Dave",
+   "total_plays": 2343,
+   "tracks": 0,
+   "subscribers": 7
+  },
+  {
+   "channel_id": "UCg61cUBfJkM4t2LTasnzM_Q",
+   "artist": "True Rumours",
+   "total_plays": 3150,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCm82HvhSfEBNSqvo4r9iD1A",
+   "artist": "A.S. Coomer",
+   "total_plays": 6982,
+   "tracks": 0,
+   "subscribers": 10
+  },
+  {
+   "channel_id": "UCs6_kwdinevHSJsqIcesKWQ",
+   "artist": "Rick Harris",
+   "total_plays": 8630,
+   "tracks": 0,
+   "subscribers": 37
+  },
+  {
+   "channel_id": "UCkzoUHXdAWL3RCm0Gbl8pIw",
+   "artist": "Zé Caetano",
+   "total_plays": 859,
+   "tracks": 0,
+   "subscribers": 7
+  },
+  {
+   "channel_id": "UCnnWW-vSlalkgBBJMyBqpSg",
+   "artist": "Artese n Toad",
+   "total_plays": 22134,
+   "tracks": 0,
+   "subscribers": 48
+  },
+  {
+   "channel_id": "UCm_f8P4Z7bM0hOlUIOoRn3g",
+   "artist": "Wez Devine",
+   "total_plays": 377342,
+   "tracks": 0,
+   "subscribers": 488
+  },
+  {
+   "channel_id": "UCsVUEUm1xvuzgIF8jKtbEog",
+   "artist": "VanPan",
+   "total_plays": 1443,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCoYKBoqgOPSqm2wi8TEOQ8A",
+   "artist": "K-Royal",
+   "total_plays": 232,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCvWFnx0HPIUQf6BulFqaGuw",
+   "artist": "Schizo Fun Addict",
+   "total_plays": 4856,
+   "tracks": 0,
+   "subscribers": 5
+  },
+  {
+   "channel_id": "UCRZzY6flIRitlrMBI9Vw62w",
+   "artist": "IKAD!",
+   "total_plays": 703,
+   "tracks": 0,
+   "subscribers": 9
+  },
+  {
+   "channel_id": "UCjuVg-DCkLMP-R83_iV_8pQ",
+   "artist": "Menahan Street Band",
+   "total_plays": 16696141,
+   "tracks": 0,
+   "subscribers": 13400
+  },
+  {
+   "channel_id": "UCwZq65XJaxl666BiQn0bIOw",
+   "artist": "Rasheen",
+   "total_plays": 1982,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCx-9yC_nUqceXW5MDFPNLMA",
+   "artist": "Beats By Medina",
+   "total_plays": 3394,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCw3z0dCHOx3jrqY_8q2wo0Q",
+   "artist": "Simon Elliott",
+   "total_plays": 19121,
+   "tracks": 0,
+   "subscribers": 38
+  },
+  {
+   "channel_id": "UCwhjZWC7tLCjAMkTZO-NQew",
+   "artist": "Bashir",
+   "total_plays": 601,
+   "tracks": 0,
+   "subscribers": 2
+  },
+  {
+   "channel_id": "UCyJ3fXInSnSLgh5fwU1iBCA",
+   "artist": "Gary Manning",
+   "total_plays": 742,
+   "tracks": 0,
+   "subscribers": 4
+  },
+  {
+   "channel_id": "UCvpixGZoQgWqVZ5TcRtWMNw",
+   "artist": "Ayugeti",
+   "total_plays": 1043,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCvu-K_tB3_sHZqIA2U_KDWA",
+   "artist": "Vit Gutkin",
+   "total_plays": 1673,
+   "tracks": 0,
+   "subscribers": 3
+  },
+  {
+   "channel_id": "UCzJA0pQ9MFbbF9Y2JQw2XLg",
+   "artist": "9ineteen Beats",
+   "total_plays": 159,
+   "tracks": 0,
+   "subscribers": 1
+  },
+  {
+   "channel_id": "UCza-Ib2ZPydsmSqGiX9Ue2g",
+   "artist": "Flawed Mangoes",
+   "total_plays": 54968994,
+   "tracks": 0,
+   "subscribers": 271
+  },
+  {
+   "channel_id": "UCzfH9D1eVtSufnH8j24QDGA",
+   "artist": "Jeffrey Briggs",
+   "total_plays": 34770,
+   "tracks": 0,
+   "subscribers": 69
+  },
+  {
+   "channel_id": "UCzYwm0CmXwfSYI0FJxUOFwg",
+   "artist": "T8DDY",
+   "total_plays": 67112,
+   "tracks": 0,
+   "subscribers": 37
+  },
+  {
+   "channel_id": "UCOOKbAPgT8xKwM6V9GLHiEg",
+   "artist": "Liana Flores",
+   "total_plays": 239415210,
+   "tracks": 0,
+   "subscribers": 43800
+  },
+  {
+   "channel_id": "UCwLZ4De-I5WdNKhelL6X3Kw",
+   "artist": "Fred Clark",
+   "total_plays": 7846,
+   "tracks": 0,
+   "subscribers": 6
+  },
+  {
+   "channel_id": "UC71utOOWOJVk__UnSCaqdqg",
+   "artist": "Their Dogs Were Astronauts",
+   "total_plays": 392624,
+   "tracks": 0,
+   "subscribers": 14
+  },
+  {
+   "channel_id": "UCvaBHBB9gmGkitY83m6z-7w",
+   "artist": "Sam Miltich",
+   "total_plays": 5567,
+   "tracks": 0,
+   "subscribers": 29
+  }
+ ],
+ "artist_names": {
+  "IKAD!": "UCRZzY6flIRitlrMBI9Vw62w",
+  "Their Dogs Were Astronauts": "UC71utOOWOJVk__UnSCaqdqg",
+  "Karmanjakah": null,
+  "Sagans": null,
+  "Menahan Street Band": "UCjuVg-DCkLMP-R83_iV_8pQ",
+  "Flawed Mangoes": "UCza-Ib2ZPydsmSqGiX9Ue2g",
+  "Liana Flores": "UCOOKbAPgT8xKwM6V9GLHiEg"
+ }
+}
