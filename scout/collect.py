@@ -82,6 +82,59 @@ def is_practice(*texts):
     return False
 
 
+# Covers. The scout is after original work, so a track is dropped when its
+# title is a well-known standard or its credits name a famous songwriter.
+# Traditional songs are left alone on purpose.
+STANDARDS = {
+    # bossa nova and Brazilian
+    "wave", "dindi", "recado bossa nova", "the gift", "chega de saudade", "no more blues",
+    "garota de ipanema", "the girl from ipanema", "girl from ipanema", "samba de verao",
+    "summer samba", "so nice", "desafinado", "corcovado", "quiet nights of quiet stars",
+    "agua de beber", "insensatez", "how insensitive", "one note samba", "samba de uma nota so",
+    "blue bossa", "a felicidade", "manha de carnaval", "black orpheus", "triste", "meditacao",
+    "mas que nada", "so danco samba", "o barquinho", "aguas de marco", "waters of march",
+    "the shadow of your smile", "tristeza", "berimbau", "o pato",
+    # jazz standards
+    "fly me to the moon", "autumn leaves", "summertime", "take five", "all the things you are",
+    "misty", "my funny valentine", "body and soul", "caravan", "night and day", "blue monk",
+    "round midnight", "so what", "all blues", "footprints", "cantaloupe island", "nuages",
+    "minor swing", "troublant bolero", "take the a train", "georgia on my mind", "stardust",
+    # boleros
+    "besame mucho", "sabor a mi", "contigo aprendi", "solamente una vez", "quizas quizas quizas",
+    "perfidia", "historia de un amor", "el reloj", "la barca", "contigo en la distancia",
+    "dos gardenias", "veinte anos", "sin ti", "rayito de luna", "la gloria eres tu",
+    # pop and rock songs that get covered constantly
+    "somewhere over the rainbow", "over the rainbow", "here comes the sun", "yesterday",
+    "hallelujah", "crimson and clover", "blackbird", "imagine", "let it be", "what a wonderful world",
+    "the sound of silence", "hotel california", "wonderwall", "creep", "summer breeze",
+}
+FAMOUS_WRITERS = re.compile(
+    r"\b(?:jobim|bonfa|vinicius de moraes|menescal|carlos lyra|baden powell|reinhardt|lennon|mccartney"
+    r"|george harrison|bob dylan|leonard cohen|gershwin|cole porter|ellington|strayhorn|jerome kern"
+    r"|richard rodgers|hammerstein|harold arlen|irving berlin|hoagy carmichael|thelonious monk"
+    r"|coltrane|wayne shorter|herbie hancock|chick corea|mancini|bacharach|consuelo velazquez"
+    r"|manzanero|cantoral|osvaldo farres|agustin lara|kenny dorham|paul desmond|brubeck)\b")
+CREDIT_LINE = re.compile(r"^(?:composer|writer|lyricist|songwriter|composer lyricist|author)s?:\s*(.+)$", re.M)
+
+
+def plain(text):
+    """Lower case, accents removed, bracketed parts and 'feat.' credits cut."""
+    import unicodedata
+    t = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"[\(\[].*?[\)\]]", " ", t)
+    t = re.sub(r"\b(?:feat|ft|featuring)\b.*$", " ", t)
+    t = re.sub(r"\s+-\s+(?:live|remaster(?:ed)?|acoustic|instrumental|demo).*$", " ", t)
+    return re.sub(r"[^a-z0-9 ]+", " ", t).strip()
+
+
+def is_cover(title, description):
+    if re.sub(r"\s+", " ", plain(title)) in STANDARDS:
+        return True
+    import unicodedata
+    desc = unicodedata.normalize("NFKD", description or "").encode("ascii", "ignore").decode().lower()
+    return any(FAMOUS_WRITERS.search(m.group(1)) for m in CREDIT_LINE.finditer(desc))
+
+
 class ApiError(Exception):
     pass
 
@@ -160,7 +213,7 @@ def run_search(search, opts, key, rng):
         }, key)
         ids = [i["id"]["videoId"] for i in data.get("items", []) if i.get("id", {}).get("videoId")]
     counts = {"returned": len(ids), "retried": retried, "releases": 0, "too_many_plays": 0,
-              "wrong_length": 0, "ai": 0, "practice": 0, "no_embed": 0, "kept": 0,
+              "wrong_length": 0, "ai": 0, "practice": 0, "cover": 0, "no_embed": 0, "kept": 0,
               "uploads_up_to": cutoff.strftime("%Y-%m")}
     kept = []
     for i in range(0, len(ids), 50):
@@ -188,6 +241,9 @@ def run_search(search, opts, key, rng):
                 continue
             if is_practice(sn.get("title"), sn.get("channelTitle")):
                 counts["practice"] += 1
+                continue
+            if is_cover(sn.get("title"), sn.get("description")):
+                counts["cover"] += 1
                 continue
             embeddable = bool(v.get("status", {}).get("embeddable", True))
             if not embeddable:
@@ -280,6 +336,15 @@ def run_request(path, key):
         out["tracks"].extend(fresh)
         out["searches"].append(dict({"style": search.get("style", ""), "q": search["q"]}, **counts))
         print(f"  {search['q']!r}: {counts}")
+
+    # One track per artist: of the tracks found for an artist, keep the most played.
+    best = {}
+    for t in out["tracks"]:
+        cur = best.get(t["channel_id"])
+        if cur is None or t["views"] > cur["views"]:
+            best[t["channel_id"]] = t
+    out["tracks_before_one_per_artist"] = len(out["tracks"])
+    out["tracks"] = [t for t in out["tracks"] if best[t["channel_id"]] is t]
 
     # Background check: audience figures for artists, by channel or by name.
     ids = list(req.get("channel_ids", []))
