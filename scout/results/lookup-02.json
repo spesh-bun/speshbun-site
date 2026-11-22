@@ -1,0 +1,110 @@
+{
+ "request": "lookup-02.json",
+ "ran_at": "2026-11-22 19:36 UTC",
+ "settings": {
+  "max_artist_plays": 1000000,
+  "max_views": null,
+  "min_seconds": 90,
+  "max_minutes": 15,
+  "released_before": "2023-01-01",
+  "released_after": "2014-06-01",
+  "results_per_search": 50
+ },
+ "searches": [],
+ "tracks": [],
+ "tracks_before_one_per_artist": 0,
+ "artists": [
+  {
+   "channel_id": "UCGnRWguuuFBfUTAQ5H9N54A",
+   "artist": "Fairer Sands",
+   "total_plays": 841,
+   "tracks": 5,
+   "subscribers": 43
+  },
+  {
+   "channel_id": "UCP25rLgVpJIeApFucwBqKhw",
+   "artist": "Lennie Rayen",
+   "total_plays": 226840,
+   "tracks": 173,
+   "subscribers": 1340
+  },
+  {
+   "channel_id": "UC1j5oTpWKhD1W9NLypmasDw",
+   "artist": "Jay Matharu",
+   "total_plays": 97784,
+   "tracks": 113,
+   "subscribers": 508
+  },
+  {
+   "channel_id": "UC-TAJsRHEZxogjipET9vVsw",
+   "artist": "Baklava Express",
+   "total_plays": 25053,
+   "tracks": 19,
+   "subscribers": 333
+  },
+  {
+   "channel_id": "UCUtrKMF_JbtQkmn9NQB0O9g",
+   "artist": "Haedrons",
+   "total_plays": 311,
+   "tracks": 6,
+   "subscribers": 15
+  },
+  {
+   "channel_id": "UCdK2EBVgSR0mNg31uisgnyw",
+   "artist": "Avi Engel",
+   "total_plays": 50652,
+   "tracks": 95,
+   "subscribers": 392
+  },
+  {
+   "channel_id": "UCRx4ksof9a5CMZLNWDN-4yA",
+   "artist": "Maud Revol",
+   "total_plays": 24560,
+   "tracks": 43,
+   "subscribers": 176
+  },
+  {
+   "channel_id": "UCuZTE2kdbhI6XK254fnzJ3Q",
+   "artist": "St. Barbe",
+   "total_plays": 9373409,
+   "tracks": 129,
+   "subscribers": 11900
+  },
+  {
+   "channel_id": "UCiMgvKB-Egkf2i210RaqbwA",
+   "artist": "Aaron Myers-Brooks",
+   "total_plays": 0,
+   "tracks": 0,
+   "subscribers": 11
+  },
+  {
+   "channel_id": "UCaHBKJxR5bgRaM5Rz0z0YIQ",
+   "artist": "The Mantra Discord",
+   "total_plays": 69713,
+   "tracks": 2,
+   "subscribers": 3160
+  },
+  {
+   "channel_id": "UC9Qw6QzFo6liEKN2KUBns1Q",
+   "artist": "Izzy Oram Brown",
+   "total_plays": 1276,
+   "tracks": 4,
+   "subscribers": 21
+  },
+  {
+   "channel_id": "UCNOTjsz9i-s_vVkLjl2cAwA",
+   "artist": "Antonio Miguel Areia",
+   "total_plays": 4211,
+   "tracks": 9,
+   "subscribers": 94
+  },
+  {
+   "channel_id": "UC_kmsbrzk6iPhCKsCiELV9w",
+   "artist": "Chonky Dogg",
+   "total_plays": 539,
+   "tracks": 0,
+   "subscribers": 12
+  }
+ ],
+ "artist_names": {}
+}
