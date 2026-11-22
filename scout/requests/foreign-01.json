@@ -1,0 +1,19 @@
+{
+  "note": "Calibration: which non-US and global self-release distributors return releases, searched by their YouTube label alone with no style word.",
+  "searches": [
+    {"style": "Japan", "q": "\"Provided to YouTube by TuneCore Japan\""},
+    {"style": "Japan", "q": "\"Provided to YouTube by NexTone Inc.\""},
+    {"style": "Korea", "q": "\"Provided to YouTube by Mirrorball Music\""},
+    {"style": "Korea", "q": "\"Provided to YouTube by POCLANOS\""},
+    {"style": "Brazil", "q": "\"Provided to YouTube by Tratore\""},
+    {"style": "Latin America", "q": "\"Provided to YouTube by ONErpm\""},
+    {"style": "Spain", "q": "\"Provided to YouTube by La Cupula Music SL\""},
+    {"style": "Germany", "q": "\"Provided to YouTube by recordJet\""},
+    {"style": "Switzerland and Germany", "q": "\"Provided to YouTube by iMusician Digital AG\""},
+    {"style": "Sweden and worldwide", "q": "\"Provided to YouTube by Amuseio AB\""},
+    {"style": "Worldwide, free tier", "q": "\"Provided to YouTube by RouteNote\""},
+    {"style": "UK and worldwide", "q": "\"Provided to YouTube by Ditto Music\""},
+    {"style": "Africa", "q": "\"Provided to YouTube by Africori\""},
+    {"style": "Russia and Eastern Europe", "q": "\"Provided to YouTube by FRESH TUNES\""}
+  ]
+}
