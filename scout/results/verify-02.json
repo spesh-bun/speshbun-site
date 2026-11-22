@@ -1,0 +1,96 @@
+{
+ "request": "verify-02.json",
+ "ran_at": "2026-11-22 19:35 UTC",
+ "settings": {
+  "max_artist_plays": 1000000,
+  "max_views": null,
+  "min_seconds": 90,
+  "max_minutes": 15,
+  "released_before": "2023-01-01",
+  "released_after": "2014-06-01",
+  "results_per_search": 50
+ },
+ "searches": [],
+ "tracks": [],
+ "tracks_before_one_per_artist": 0,
+ "verified": [
+  {
+   "artist": "St. Barbe",
+   "own_channel": "UCuZTE2kdbhI6XK254fnzJ3Q",
+   "subscribers": 11900,
+   "channel_plays": 9373409
+  },
+  {
+   "artist": "Fairer Sands",
+   "own_channel": "UCGnRWguuuFBfUTAQ5H9N54A",
+   "subscribers": 43,
+   "channel_plays": 841
+  },
+  {
+   "artist": "Haedrons",
+   "own_channel": "UCUtrKMF_JbtQkmn9NQB0O9g",
+   "subscribers": 15,
+   "channel_plays": 311
+  },
+  {
+   "artist": "Chonky Dogg",
+   "own_channel": "UC_kmsbrzk6iPhCKsCiELV9w",
+   "subscribers": 12,
+   "channel_plays": 539
+  },
+  {
+   "artist": "Aaron Myers-Brooks",
+   "own_channel": "UCiMgvKB-Egkf2i210RaqbwA",
+   "subscribers": 11,
+   "channel_plays": 0
+  },
+  {
+   "artist": "Jay Matharu",
+   "own_channel": "UC1j5oTpWKhD1W9NLypmasDw",
+   "subscribers": 508,
+   "channel_plays": 97784
+  },
+  {
+   "artist": "Avi Engel",
+   "own_channel": "UCdK2EBVgSR0mNg31uisgnyw",
+   "subscribers": 392,
+   "channel_plays": 50652
+  },
+  {
+   "artist": "Izzy Oram Brown",
+   "own_channel": "UC9Qw6QzFo6liEKN2KUBns1Q",
+   "subscribers": 21,
+   "channel_plays": 1276
+  },
+  {
+   "artist": "Lennie Rayen",
+   "own_channel": "UCP25rLgVpJIeApFucwBqKhw",
+   "subscribers": 1340,
+   "channel_plays": 226840
+  },
+  {
+   "artist": "Maud Revol",
+   "own_channel": "UCRx4ksof9a5CMZLNWDN-4yA",
+   "subscribers": 176,
+   "channel_plays": 24560
+  },
+  {
+   "artist": "Antonio Miguel Areia",
+   "own_channel": "UCNOTjsz9i-s_vVkLjl2cAwA",
+   "subscribers": 94,
+   "channel_plays": 4211
+  },
+  {
+   "artist": "Baklava Express",
+   "own_channel": "UC-TAJsRHEZxogjipET9vVsw",
+   "subscribers": 333,
+   "channel_plays": 25053
+  },
+  {
+   "artist": "The Mantra Discord",
+   "own_channel": "UCaHBKJxR5bgRaM5Rz0z0YIQ",
+   "subscribers": 3160,
+   "channel_plays": 69713
+  }
+ ]
+}
