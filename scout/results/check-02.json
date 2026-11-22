@@ -1,0 +1,29 @@
+{
+ "request": "check-02.json",
+ "ran_at": "2026-11-22 18:08 UTC",
+ "settings": {
+  "max_artist_plays": 1000000,
+  "max_views": null,
+  "min_seconds": 90,
+  "max_minutes": 15,
+  "released_before": "2023-01-01",
+  "released_after": "2014-06-01",
+  "results_per_search": 50
+ },
+ "searches": [
+  {
+   "style": "bossa nova",
+   "q": "\"Provided to YouTube by CD Baby\" bossa nova",
+   "returned": 0,
+   "releases": 0,
+   "too_many_plays": 0,
+   "wrong_length": 0,
+   "ai": 0,
+   "no_embed": 0,
+   "kept": 0,
+   "uploads_up_to": "2019-01",
+   "artist_too_big": 0
+  }
+ ],
+ "tracks": []
+}
