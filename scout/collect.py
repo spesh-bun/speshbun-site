@@ -56,6 +56,32 @@ AI_MARKERS = [re.compile(p) for p in (
 )]
 
 
+# Practice material and production-line music: backing tracks, play-alongs,
+# click and metronome versions, tempo-labelled loops, karaoke. Checked against
+# the track title and the artist name.
+PRACTICE_MARKERS = [re.compile(p) for p in (
+    r"\bplay[- ]?along\b",
+    r"\b(?:backing|jam|click|drum|practice|guide) tracks?\b",
+    r"\bclick version\b",
+    r"\bmetronome\b",
+    r"\b\d{2,3} ?bpm\b",
+    r"\bdrumless\b",
+    r"\bminus one\b",
+    r"\bkaraoke\b",
+    r"\bno (?:drums|bass|guitar|piano|shaker|vocals)\b",
+    r"\bfor (?:drums|drummers|bass|bassists|guitarists) (?:only|practice)\b",
+    r"\b(?:funk|rock|jazz|blues|bossa|latin|drum) (?:beat|loop|groove) ?#? ?\d+\b",
+)]
+
+
+def is_practice(*texts):
+    for text in texts:
+        low = (text or "").lower()
+        if any(p.search(low) for p in PRACTICE_MARKERS):
+            return True
+    return False
+
+
 class ApiError(Exception):
     pass
 
@@ -134,7 +160,7 @@ def run_search(search, opts, key, rng):
         }, key)
         ids = [i["id"]["videoId"] for i in data.get("items", []) if i.get("id", {}).get("videoId")]
     counts = {"returned": len(ids), "retried": retried, "releases": 0, "too_many_plays": 0,
-              "wrong_length": 0, "ai": 0, "no_embed": 0, "kept": 0,
+              "wrong_length": 0, "ai": 0, "practice": 0, "no_embed": 0, "kept": 0,
               "uploads_up_to": cutoff.strftime("%Y-%m")}
     kept = []
     for i in range(0, len(ids), 50):
@@ -159,6 +185,9 @@ def run_search(search, opts, key, rng):
             if says_ai(sn.get("title"), sn.get("description"), " ".join(sn.get("tags", []))) \
                     or v.get("status", {}).get("containsSyntheticMedia"):
                 counts["ai"] += 1
+                continue
+            if is_practice(sn.get("title"), sn.get("channelTitle")):
+                counts["practice"] += 1
                 continue
             embeddable = bool(v.get("status", {}).get("embeddable", True))
             if not embeddable:
