@@ -1,0 +1,14 @@
+{
+  "note": "Same nine style searches as batch 2, first run with the artist ceiling at ten million lifetime plays.",
+  "searches": [
+    {"style": "bossa nova", "q": "\"Provided to YouTube by CD Baby\" bossa nova"},
+    {"style": "bolero", "q": "\"Provided to YouTube by CD Baby\" bolero trio"},
+    {"style": "jazz", "q": "\"Provided to YouTube by CD Baby\" jazz trio original"},
+    {"style": "funk", "q": "\"Provided to YouTube by CD Baby\" funk band instrumental"},
+    {"style": "math rock", "q": "\"Provided to YouTube by DistroKid\" math rock"},
+    {"style": "songwriter", "q": "\"Provided to YouTube by DistroKid\" singer-songwriter folk"},
+    {"style": "dream pop", "q": "\"Provided to YouTube by DistroKid\" dream pop shoegaze"},
+    {"style": "drum and bass", "q": "\"Provided to YouTube by DistroKid\" jungle drum and bass"},
+    {"style": "traditional", "q": "\"Provided to YouTube by CD Baby\" traditional irish song"}
+  ]
+}
