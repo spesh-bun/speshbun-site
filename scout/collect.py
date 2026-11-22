@@ -299,6 +299,38 @@ def find_artist_channel(name, key):
     return None
 
 
+def own_channel_check(names, key):
+    """Second pass for a shortlist. The audience figure on an artist's
+    auto-generated page leaves out the artist's own channel, so this looks
+    that channel up by name and reports its subscribers. One search each."""
+    out = []
+    for name in names:
+        want = plain(name)
+        try:
+            data = api_get("search", {"part": "snippet", "q": name, "type": "channel",
+                                      "maxResults": 10}, key)
+        except ApiError as err:
+            out.append({"artist": name, "error": str(err)})
+            continue
+        ids = []
+        for item in data.get("items", []):
+            title = item.get("snippet", {}).get("title", "")
+            cid = item.get("id", {}).get("channelId")
+            base = plain(re.sub(r"\s+-\s+Topic$", "", title))
+            if cid and (base == want or base in (want + " music", want + " official", want + " band")):
+                ids.append(cid)
+        best = None
+        if ids:
+            for c in channel_stats(ids, key):
+                if c["subscribers"] is not None and (best is None or c["subscribers"] > best["subscribers"]):
+                    best = c
+        out.append({"artist": name,
+                    "own_channel": best["channel_id"] if best else None,
+                    "subscribers": best["subscribers"] if best else None,
+                    "channel_plays": best["total_plays"] if best else None})
+    return out
+
+
 def run_request(path, key):
     req = json.loads(path.read_text(encoding="utf-8"))
     opts = dict(DEFAULTS, **{k: v for k, v in req.items() if k in DEFAULTS})
@@ -365,6 +397,10 @@ def run_request(path, key):
             out["artists_error"] = str(err)
         out["artist_names"] = named
         print(f"  audience figures for {len(out.get('artists', []))} artists")
+
+    if req.get("verify_artists"):
+        out["verified"] = own_channel_check(req["verify_artists"], key)
+        print(f"  own-channel check for {len(out['verified'])} artists")
     return out
 
 
