@@ -167,6 +167,39 @@ def run_search(search, opts, key, rng):
     return kept, counts
 
 
+def channel_stats(channel_ids, key):
+    """Audience figures YouTube reports for each artist channel: one small
+    request covers 50 channels, and it uses none of the daily searches."""
+    out = []
+    for i in range(0, len(channel_ids), 50):
+        data = api_get("channels", {"part": "snippet,statistics",
+                                    "id": ",".join(channel_ids[i:i + 50])}, key)
+        for c in data.get("items", []):
+            st = c.get("statistics", {})
+            hidden = bool(st.get("hiddenSubscriberCount"))
+            out.append({
+                "channel_id": c["id"],
+                "artist": re.sub(r"\s+-\s+Topic$", "", c["snippet"].get("title", "")),
+                "total_plays": int(st.get("viewCount", 0) or 0),
+                "tracks": int(st.get("videoCount", 0) or 0),
+                "subscribers": None if hidden else int(st.get("subscriberCount", 0) or 0),
+            })
+    return out
+
+
+def find_artist_channel(name, key):
+    """Finds the channel YouTube auto-generates for an artist's releases
+    ("<name> - Topic"). Costs one search."""
+    data = api_get("search", {"part": "snippet", "q": name, "type": "video",
+                              "videoCategoryId": "10", "maxResults": 25}, key)
+    want = name.strip().lower() + " - topic"
+    for item in data.get("items", []):
+        sn = item.get("snippet", {})
+        if sn.get("channelTitle", "").strip().lower() == want:
+            return sn.get("channelId")
+    return None
+
+
 def run_request(path, key):
     req = json.loads(path.read_text(encoding="utf-8"))
     opts = dict(DEFAULTS, **{k: v for k, v in req.items() if k in DEFAULTS})
@@ -186,6 +219,26 @@ def run_request(path, key):
         out["tracks"].extend(fresh)
         out["searches"].append(dict({"style": search.get("style", ""), "q": search["q"]}, **counts))
         print(f"  {search['q']!r}: {counts}")
+
+    # Background check: audience figures for artists, by channel or by name.
+    ids = list(req.get("channel_ids", []))
+    named = {}
+    for name in req.get("artist_names", []):
+        try:
+            cid = find_artist_channel(name, key)
+        except ApiError as err:
+            print(f"  FAILED lookup of {name!r}: {err}")
+            cid = None
+        named[name] = cid
+        if cid:
+            ids.append(cid)
+    if ids or named:
+        try:
+            out["artists"] = channel_stats(list(dict.fromkeys(ids)), key)
+        except ApiError as err:
+            out["artists_error"] = str(err)
+        out["artist_names"] = named
+        print(f"  audience figures for {len(out.get('artists', []))} artists")
     return out
 
 
