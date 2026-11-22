@@ -1,0 +1,132 @@
+{
+ "request": "verify-01.json",
+ "ran_at": "2026-11-22 19:00 UTC",
+ "settings": {
+  "max_artist_plays": 1000000,
+  "max_views": null,
+  "min_seconds": 90,
+  "max_minutes": 15,
+  "released_before": "2023-01-01",
+  "released_after": "2014-06-01",
+  "results_per_search": 50
+ },
+ "searches": [],
+ "tracks": [],
+ "tracks_before_one_per_artist": 0,
+ "verified": [
+  {
+   "artist": "Pool Shop",
+   "own_channel": "UCUEBsw4RmxB_2qrK8Xo1LIg",
+   "subscribers": 266,
+   "channel_plays": 80129
+  },
+  {
+   "artist": "Casper Mcfadden",
+   "own_channel": "UCR5h4TuEv0xb1yLcrqGhZqA",
+   "subscribers": 519,
+   "channel_plays": 113052
+  },
+  {
+   "artist": "Men of Worth",
+   "own_channel": "UCGXY1oqBxzSIuy6sPnoiTLw",
+   "subscribers": 253,
+   "channel_plays": 110716
+  },
+  {
+   "artist": "Budapest Scoring Cellos",
+   "own_channel": "UCEZO3IYk4rKnL8D5YRPGTZg",
+   "subscribers": 0,
+   "channel_plays": 59
+  },
+  {
+   "artist": "Diknu Schneeberger Trio",
+   "own_channel": "UCAf784gYqsXfMZ96hlo7URg",
+   "subscribers": 147,
+   "channel_plays": 40205
+  },
+  {
+   "artist": "Tom Ranier",
+   "own_channel": "UCJ1Y87DqrHtbbAipiebmovg",
+   "subscribers": 434,
+   "channel_plays": 34980
+  },
+  {
+   "artist": "Younger Than Neil",
+   "own_channel": "UCncCOz4wZw20BUyYfq2Ck9Q",
+   "subscribers": 112,
+   "channel_plays": 11338
+  },
+  {
+   "artist": "Jeremy Casella",
+   "own_channel": "UCqkLzO_yoXR8s57P7Sw6QAA",
+   "subscribers": 209,
+   "channel_plays": 21031
+  },
+  {
+   "artist": "Lazy Legs",
+   "own_channel": "UCrVjUD07Av_q_MD9MKl-pLg",
+   "subscribers": 255,
+   "channel_plays": 51836
+  },
+  {
+   "artist": "Chris Norlinger",
+   "own_channel": "UCQn9fGhd2pD1cZEi2hnjKUA",
+   "subscribers": 0,
+   "channel_plays": 866
+  },
+  {
+   "artist": "Róisín Elsafty",
+   "own_channel": "UCgFIrMiYgxhvk7U2gX4aQFQ",
+   "subscribers": 302,
+   "channel_plays": 95497
+  },
+  {
+   "artist": "Denis Lyubich",
+   "own_channel": "UCMlR6fjFS7XVPeZNawQt8ig",
+   "subscribers": 137,
+   "channel_plays": 150041
+  },
+  {
+   "artist": "Alma de Bolero",
+   "own_channel": "UC8hORJmOBOxoE0m8D_zTntg",
+   "subscribers": 14500,
+   "channel_plays": 2791861
+  },
+  {
+   "artist": "The Lorca Hart Trio",
+   "own_channel": "UCiU8W_ebNvup_Yix93EhuTw",
+   "subscribers": 23,
+   "channel_plays": 6039
+  },
+  {
+   "artist": "Chamber Band",
+   "own_channel": "UCcuVwmslZm4VJx7C3AXso_g",
+   "subscribers": 252,
+   "channel_plays": 51728
+  },
+  {
+   "artist": "Auni",
+   "own_channel": "UCQ1j8Nx8rZLiUKrSMBUsUCg",
+   "subscribers": 13600,
+   "channel_plays": 2655880
+  },
+  {
+   "artist": "George Barbera",
+   "own_channel": "UCXOndNDd_G_7bhzxVVQrEFA",
+   "subscribers": 88,
+   "channel_plays": 3383
+  },
+  {
+   "artist": "Hunter Killer",
+   "own_channel": "UCo4EyjppLEfJ-kAJd1wvh9Q",
+   "subscribers": 6260,
+   "channel_plays": 4102859
+  },
+  {
+   "artist": "Martin Marron",
+   "own_channel": "UCbETQgzu0P__H_UjbpvKZ_A",
+   "subscribers": 54,
+   "channel_plays": 28373
+  }
+ ]
+}
