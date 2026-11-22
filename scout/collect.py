@@ -32,7 +32,7 @@ RESULTS = HERE / "results"
 API = "https://www.googleapis.com/youtube/v3/"
 
 DEFAULTS = {
-    "max_artist_plays": 10000000,  # ceiling on an artist's lifetime plays across all releases
+    "max_artist_plays": 1000000,   # ceiling on an artist's lifetime plays across all releases
     "max_views": None,        # optional ceiling per track; None means no limit
     "min_seconds": 90,
     "max_minutes": 15,
