@@ -120,7 +120,20 @@ def run_search(search, opts, key, rng):
         "publishedBefore": cutoff.strftime(stamp),
     }, key)
     ids = [i["id"]["videoId"] for i in data.get("items", []) if i.get("id", {}).get("videoId")]
-    counts = {"returned": len(ids), "releases": 0, "too_many_plays": 0,
+    retried = False
+    if not ids:
+        # YouTube's search sometimes comes back empty for no reason. Try once
+        # more with a different slice of years (this costs a second search).
+        retried = True
+        cutoff = after + (before - after) * (0.25 + 0.75 * rng.random())
+        data = api_get("search", {
+            "part": "id", "q": search["q"], "type": "video", "order": "date",
+            "videoCategoryId": "10", "maxResults": opts["results_per_search"],
+            "publishedAfter": after.strftime(stamp),
+            "publishedBefore": cutoff.strftime(stamp),
+        }, key)
+        ids = [i["id"]["videoId"] for i in data.get("items", []) if i.get("id", {}).get("videoId")]
+    counts = {"returned": len(ids), "retried": retried, "releases": 0, "too_many_plays": 0,
               "wrong_length": 0, "ai": 0, "no_embed": 0, "kept": 0,
               "uploads_up_to": cutoff.strftime("%Y-%m")}
     kept = []
