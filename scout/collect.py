@@ -32,7 +32,8 @@ RESULTS = HERE / "results"
 API = "https://www.googleapis.com/youtube/v3/"
 
 DEFAULTS = {
-    "max_views": 1500,        # plays ceiling per track
+    "max_artist_plays": 1000000,   # ceiling on an artist's lifetime plays across all releases
+    "max_views": None,        # optional ceiling per track; None means no limit
     "min_seconds": 90,
     "max_minutes": 15,
     "released_before": "2023-01-01",   # keeps clear of the AI-generated flood
@@ -136,7 +137,7 @@ def run_search(search, opts, key, rng):
             counts["releases"] += 1
             views = int(v.get("statistics", {}).get("viewCount", 0) or 0)
             secs = iso_seconds(v.get("contentDetails", {}).get("duration"))
-            if views > opts["max_views"]:
+            if opts["max_views"] is not None and views > opts["max_views"]:
                 counts["too_many_plays"] += 1
                 continue
             if secs < opts["min_seconds"] or secs > opts["max_minutes"] * 60:
@@ -216,6 +217,24 @@ def run_request(path, key):
             continue
         fresh = [t for t in kept if t["video_id"] not in seen]
         seen.update(t["video_id"] for t in fresh)
+        # Background check: drop artists whose lifetime plays are over the ceiling.
+        counts["artist_too_big"] = 0
+        if fresh and opts["max_artist_plays"] is not None:
+            try:
+                stats = {a["channel_id"]: a["total_plays"]
+                         for a in channel_stats(sorted({t["channel_id"] for t in fresh}), key)}
+            except ApiError as err:
+                stats = {}
+                counts["artist_check_error"] = str(err)
+            checked = []
+            for t in fresh:
+                t["artist_plays"] = stats.get(t["channel_id"])
+                if t["artist_plays"] is not None and t["artist_plays"] > opts["max_artist_plays"]:
+                    counts["artist_too_big"] += 1
+                else:
+                    checked.append(t)
+            fresh = checked
+            counts["kept"] = len(fresh)
         out["tracks"].extend(fresh)
         out["searches"].append(dict({"style": search.get("style", ""), "q": search["q"]}, **counts))
         print(f"  {search['q']!r}: {counts}")
